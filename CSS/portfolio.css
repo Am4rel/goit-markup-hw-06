@@ -371,7 +371,6 @@ img {
 .footer-container {
   padding-bottom: 60px;
   padding-top: 60px;
-  width: 341px;
 }
 
 .footer.list {
@@ -421,7 +420,7 @@ img {
   background-color: var(--blue-color);
 }
 
-.title-footer-social {
+.title-footer {
   font-family: Roboto;
   font-weight: 700;
   font-size: 14px;
@@ -433,7 +432,104 @@ img {
   margin-bottom: 20px;
 }
 
-.container.footer-social {
+.footer-social {
   padding-top: 72px;
   margin-left: 70px;
+}
+
+.footer-form-container {
+  padding-top: 72px;
+  margin-left: 93px;
+}
+
+.footer-form {
+  display: flex;
+}
+
+.footer-input {
+  padding: 0 0 0 16px;
+  margin-right: 12px;
+
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--white-color);
+
+  transition: border 250ms var(--bezier);
+}
+
+.footer-input:focus {
+  border-color: var(--blue-color);
+  outline: 0;
+}
+
+.footer-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+
+  display: flex;
+  align-items: center;
+
+  transition: color 250ms var(--bezier);
+}
+
+.footer-form .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+
+  width: 200px;
+  height: 50px;
+}
+
+.footer-form-svg {
+  margin-left: 10px;
+  fill: var(--white-color);
+
+  transition: fill 250ms var(--bezier);
+}
+
+.footer-form .button:hover .footer-form-svg,
+.footer-form .button:focus .footer-form-svg {
+  fill: var(--blue-color);
+}
+
+/* Оформление кнопки в футере */
+
+.footer-form .button {
+  padding: 10px;
+
+  color: var(--white-color);
+  background-color: var(--blue-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  border-radius: 6%;
+
+  transition: color 250ms var(--bezier), background-color 250ms var(--bezier);
+}
+
+.footer-form .button:hover,
+.footer-form .button:focus {
+  color: var(--blue-color);
+  background-color: var(--white-color);
+  outline: 0;
+}
+
+.footer-form .button:hover .footer-form-svg,
+.footer-form .button:focus .footer-form-svg {
+  fill: var(--blue-color);
 }
